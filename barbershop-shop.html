@@ -7,12 +7,14 @@
 </head>
 <body>
   <header class="main-header">
-   	<div class="container-shop">
+   	<div class="container">
     	<nav class="main-navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="http://placehold.it/150x100">
+          </a>
+        </div> 			
   			<ul>
-         		<li>
-            		<a href="#">Главная</a>
-          		</li>
         		<li>
             		<a href="#">Информация</a>
           		</li>
@@ -35,136 +37,117 @@
       </div>
   	</div>
 	</header>
-	<main class="container-shop">
-		<div class="breadcrumbs">
-			<h1>Средства для ухода</h1>
-			<ul>
-				<li>Главная</li>
-				<li>Магазин</li>
-				<li>Средства для ухода</li>
-			</ul>
-		</div>
-		<!-- Возможно, стоит разбить на три блока, но пока не нахожу причины, почему их создание необходимо. -->
-		<div class="shop-list">
-			<h2>Производители:</h2>
-			<form class="manufacturers" action="https://echo.htmlacademy.ru" method="post">
+	<main class="container">
+		<h1 class="main-title">Средства для ухода</h1>
+		<ul class="breadcrumbs">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Магазин</a></li>
+			<li>Средства для ухода</li>
+		</ul>
+		<form class="item-choice" action="https://echo.htmlacademy.ru" method="post">
+			<div class="filter-group">
+				<h2 class="sub-title">Производители:</h2>
 				<input type="checkbox" name="manufacturer" value="Baxter of California" id="Baxter" checked>
-					<label for="Baxter">Baxter of California</label><br>
+					<label for="Baxter">Baxter of California</label>
 				<input type="checkbox" name="manufacturer" value="Mr Natty" id="Natty">
-					<label for="Natty">Mr Natty</label><br>
+					<label for="Natty">Mr Natty</label>
 				<input type="checkbox" name="manufacturer" value="Suavecito" id="Suavecito" checked>
-					<label for="Suavecito">Suavecito</label><br>
+					<label for="Suavecito">Suavecito</label>
 				<input type="checkbox" name="manufacturer" value="Malin+Goetz" id="MalinGoetz">
-					<label for="MalinGoetz">Malin+Goetz</label><br>
+					<label for="MalinGoetz">Malin+Goetz</label>
 				<input type="checkbox" name="manufacturer" value="Murray's" id="Murray">
-					<label for="Murray">Murray's</label><br>
+					<label for="Murray">Murray's</label>
 				<input type="checkbox"name="manufacturer" value="American Crew" id="AmericanCrew" checked>
-					<label for="AmericanCrew">American Crew</label><br>
-			</form>
-			<h2>Группы товаров:</h2>
-			<form class="goods-groups" action="https://echo.htmlacademy.ru" method="post">
+					<label for="AmericanCrew">American Crew</label>
+			</div>
+			<div class="filter-group">
+				<h2 class="sub-title">Группы товаров:</h2>
 				<input type="radio" name="item" value="shaving" id="shaving" checked>
-					<label for="shaving">Бритвенные принадлежности</label><br>
+					<label for="shaving">Бритвенные принадлежности</label>
 				<input type="radio" name="item" value="means for care" id="care">
-					<label for="care">Средства для ухода</label><br>
+					<label for="care">Средства для ухода</label>
 				<input type="radio" name="item" value="accessories" id="accessories">
 					<label for="accessories">Аксессуары</label>
-			</form>
-			<button type="submit">Показать</button>
-		</div>
-		<div class="goods-table">
-			<article>
-				<figure>
+			</div>
+			<button type="submit" class="btn">Показать</button>
+		</form>
+		<div class="products">
+			<article class="products-item">
+				<a href="#">
 					<img src="http://placehold.it/150x100">
-				</figure>
-				<p>
-					Набор для путешествий<br><span class="uppercase">
+					Набор для путешествий<span class="uppercase">
 					«Baxter of California»</span>
-				</p>
+				</a>
 				<span class="price">
 					2 900 руб.
 				</span>
 				<a class="button" href="#">Купить</a>
 			</article>
-			<article>
-				<figure>
+			<article class="products-item">
+				<a href="#">
 					<img src="http://placehold.it/150x100">
-				</figure>
-				<p>
-					Увлажняющий кондиционер<br><span class="uppercase">
+					Увлажняющий кондиционер<span class="uppercase">
 					«Baxter of California»</span>
-				</p>
+				</a>
 				<span class="price">
 					750 руб.
 				</span>
 				<a class="button" href="#">Купить</a>
 			</article>
-			<article>
-				<figure>
+			<article class="products-item">
+				<a href="#">
 					<img src="http://placehold.it/150x100">
-				</figure>
-				<p>
-					Гель для волос<br><span class="uppercase">
+					Гель для волос<span class="uppercase">
 					«Sauvecito»</span>
-				</p>
+				</a>
 				<span class="price">
 					290 руб.
 				</span>
 				<a class="button" href="#">Купить</a>
 			</article>
-			<article>
-				<figure>
+			<article class="products-item">
+				<a href="#">
 					<img src="http://placehold.it/150x100">
-				</figure>
-				<p>
-					Глина для укладки волос<br><span class="uppercase">
+					Глина для укладки волос<span class="uppercase">
 					«American Crew»</span>
-				</p>
+				</a>
 				<span class="price">
 					500 руб.
 				</span>
 				<a class="button" href="#">Купить</a>
 			</article>
-			<article>
-				<figure>
+			<article class="products-item">
+				<a href="#">
 					<img src="http://placehold.it/150x100">
-				</figure>
-				<p>
-					Гель для волос<br><span class="uppercase">
+					Гель для волос<span class="uppercase">
 					«American Crew»</span>
-				</p>
+				</a>
 				<span class="price">
 					300 руб.
 				</span>
 				<a class="button" href="#">Купить</a>
 			</article>
-			<article>
-				<figure>
+			<article class="products-item">
+				<a href="#">
 					<img src="http://placehold.it/150x100">
-				</figure>
-				<p>
-					Набор для бритья<br><span class="uppercase">
+					Набор для бритья<span class="uppercase">
 					«Baxter of California»</span>
-				</p>
+				</a>
 				<span class="price">
 					3 900 руб.
 				</span>
 				<a class="button" href="#">Купить</a>
 			</article>
 		</div>
-		<div class="shop-main-bottom">
-			<div class="page-number">
-				<ul>
-					<li><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-				</ul>
-			</div>
-		</div>
+		<ul class="pagination">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+		</ul>
 	</main>
-	<footer class="container-shop">
-    <div class="container-shop">
+	<footer class="main-footer">
+    <div class="container">
       <section class="footer-contacts">
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
