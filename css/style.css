@@ -1,7 +1,5 @@
 body {
-	font-size: 14px;
-	font-family: "PT Sans Narrow", sans-serif;
-	font-weight: bold;
+	font: bold 14px "PT Sans Narrow", "Arial", sans-serif;
 	line-height: 24px;
 	color: #000000;
 }
@@ -11,40 +9,30 @@ body {
 }
 
 .main-navigation a {
-	font-size: 16px;
-	font-weight: bold;
-	font-family: "PT Sans Narrow", sans-serif;
+	font: bold 16px "PT Sans Narrow", "Arial", sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #ffffff;
 }
 
 .login {
-	font-size: 16px; 
-	font-weight: bold;
-	font-family: "PT Sans Narrow", sans-serif;
+	font: bold 16px "PT Sans Narrow", "Arial", sans-serif; 
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #ffffff;	
 }
 
 .main-title {
-	font: 30px;
-	font-weight: bold;
-	font-family: "PT Sans Narrow", sans-serif;
+	font: bold 30px "PT Sans Narrow", "Arial", sans-serif;
 	color: #000000;
 }
 
 .sub-title {
-	font-size: 24px;
-	font-weight: bold;
-	font-family: "PT Sans Narrow", sans-serif;
+	font-size: bold 24px "PT Sans Narrow", "Arial", sans-serif;
 	color: #000000;	
 }
 
 .promo-title {
-	font-size: 48px;
-	font-weight: bold;
-	font-family: "PT Sans Narrow", sans-serif;
+	font-size: bold 48px "PT Sans Narrow", "Arial", sans-serif;
 	color: #000000;	
 }
