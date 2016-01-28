@@ -31,13 +31,14 @@
         </ul>
       </nav>
       <div class="user-block"> 
+        <img src="img/icon-login.png">
         <a class="login" href="#">Вход</a>
       </div>
   	</div>
 	</header>
 	<main class="container">
     <div class="index-logo">
-      <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
+      <img src="img/borodinski.png" width="368" height="204" alt="Барбершоп «Бородинский»">
     </div>
 		<section class="features">
       <div class="features-item">
@@ -59,11 +60,11 @@
           <ul class="news-preview">
             <li>
               <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-              <time datetime="2016-01-11">11 января</time>
+              <time datetime="2015-09-25">25 сентября</time>
             </li>
             <li>
               <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-              <time datetime="2016-01-18">18 января</time>
+              <time datetime="2015-09-19">19 сентября</time>
             </li>
           </ul>
           <a class="btn" href="#">Все новости</a>
@@ -72,7 +73,7 @@
           <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery-content">
-              <img src="img/photo-1.jpg" width="286" height="164" alt="">
+              <img src="img/gallery.jpg" width="286" height="164" alt="Фотография">
             </figure>
             <button class="btn gallery-prev">Назад</button>
             <button class="btn gallery-next">Вперёд</button>
@@ -128,5 +129,30 @@
       </section>
     </div>
 	</footer>
+    <div class="application-form">
+      <form class="application" action="https://echo.htmlacademy.ru" method="post">
+        <span class="application-title">Личный кабинет</span>
+          <div class="row">
+            <label for="user-name">Введите пожалуйста свой логин и пароль
+              <img src="img/user.png">
+              <input type="text" name="login" id="user-name" placeholder="Логин">
+            </label>
+          </div>
+          <div class="row">
+            <img src="img/lock.png">
+            <input type="password" name="password" placeholder="Пароль">
+          </div>
+          <div class="row">
+            <div class="column-left">
+              <input type="checkbox" name="remember" value="yes" id="remember-me">
+              <label for="remember-me">Запомните меня</label>
+            </div>
+            <div class="column-right">
+              <a href="">Я забыл пароль!</a>
+            </div>
+          </div>
+        <button class="btn" type="submit">Найти</button>
+      </form>
+    </div>
 </body>
 </html>
