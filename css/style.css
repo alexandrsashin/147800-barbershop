@@ -1,11 +1,54 @@
+html, body {
+	min-width: 1122px;
+	min-height: 1750px;
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font: bold 14px "PT Sans Narrow", "Arial", sans-serif;
 	line-height: 24px;
+	background: #000000 url("../img/background.jpg") no-repeat 50% 3px;
 	color: #000000;
 }
 
+p {
+	font: bold 14px "PT Sans Narrow", "Arial", sans-serif;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+h1, h2 {
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.minor-pages {
+	background: url("../img/texture.jpg");
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .main-header {
+	margin: 0 0 60px 0;
 	background: #000000;
+}
+
+.main-navigation {
+	min-height: 70px;
+	float: left;
+	width: 780px;
 }
 
 .main-navigation a {
@@ -15,6 +58,19 @@ body {
 	color: #ffffff;
 }
 
+.main-navigation li {
+	display: inline-block;
+	padding-right: 20px;
+	list-style: none;
+	vertical-align: bottom;
+}
+
+.user-block {
+	min-height: 70px;
+	float: right;
+	width: 140px;
+}
+
 .login {
 	font: bold 16px "PT Sans Narrow", "Arial", sans-serif; 
 	text-transform: uppercase;
@@ -22,17 +78,200 @@ body {
 	color: #ffffff;	
 }
 
-.main-title {
+.index-logo {
+	width: 368px;
+	height: 204px;
+	margin: 0 auto 25px auto;
+}
+
+.features {
+	margin: 0 0 80px 0;
+}
+
+.features-name {
+	font: bold 30px "PT Sans Narrow", "Arial", sans-serif; 
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.features-item {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.features-item:last-child {
+	margin-right: 0;
+}
+
+.features-item p {
+	color: #ffffff;	
+}
+.index-content {
+	margin: 0 0 35px 0;
+	padding: 50px 80px;
+	background: url("../img/texture.jpg");
+}
+
+.index-content-title {
 	font: bold 30px "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.index-content-left {
+	float: left;
+	width: 380px;
+}
+
+.index-content-right {
+	float: right;
+	width: 300px;
+}
+
+.main-footer {
+	margin: 65px 0 0 0;
+	padding: 60px 0 40px 0;
+	background: url("../img/texture-footer.jpg");
+}
+
+.minor-footer {
+	margin: 50px 0 0 0;
+	padding: 60px 0 40px 0;
+	background: url("../img/texture-footer.jpg");
+}
+
+.footer-contacts {
+	float: left;
+	width: 320px;
+	margin: 0 60px 0 0;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.footer-social {
+	float: left;
+	width: 180px;
+}
+
+.footer-social p {
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.footer-copyright {
+	float: right;
+	width: 180px;
+}
+
+.footer-copyright p {
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.main-title {
+	margin-bottom: 20px;
+	font: bold 30px "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
 	color: #000000;
 }
 
 .sub-title {
-	font-size: bold 24px "PT Sans Narrow", "Arial", sans-serif;
+	font: bold 24px "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
 	color: #000000;	
 }
 
 .promo-title {
-	font-size: bold 48px "PT Sans Narrow", "Arial", sans-serif;
+	margin-bottom: 60px;
+	font: bold 48px "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
 	color: #000000;	
+}
+
+.breadcrumbs {
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	list-style: none;
+	vertical-align: bottom;
+	font: bold 14px "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
+}
+
+.item-image	{
+	width: 460px;
+	float: left;
+}
+
+.item-image img {
+	margin-bottom: 20px;
+}
+
+.item-image-link {
+	margin-right: 20px;
+	font-size: 0;
+}
+
+.item-image-link:last-child {
+	margin-right: 0;
+}
+
+.description {
+	width: 390px;
+	float: right;
+}
+
+.column-left {
+	width: 370px;
+	float: left;
+}
+
+.column-right {
+	width: 460px;
+	float: right;
+}
+
+.item-choice {
+	width: 220px;
+	float: left;
+}
+
+.products {
+	width: 700px;
+	float: right;
+	font-size: 0;
+}
+
+.products-item {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+.products-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+.products-name {
+	width: 220px;
+	display: block;
+	font: bold 14px "PT Sans Narrow", "Arial", sans-serif;
+	line-height: 18px;
+}
+
+.pagination {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	list-style: none;
+}
+
+.pagination li {
+	font: bold 14px "PT Sans Narrow", "Arial", sans-serif;
 }
